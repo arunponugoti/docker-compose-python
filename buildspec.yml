@@ -34,8 +34,8 @@ phases:
   post_build:
     commands:
       - echo Entered the post_build phase...
-      - docker tag my-python-app:latest ${DOCKER_REGISTRY_URL}:myapp
-      - docker push ${DOCKER_REGISTRY_URL}:myapp
+      - docker tag my-python-app:latest ${DOCKER_REGISTRY_URL}:my-python-app
+      - docker push ${DOCKER_REGISTRY_URL}:my-python-app
       - echo Build completed on `date`
 cache:
   paths:
